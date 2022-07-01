@@ -2,8 +2,6 @@
 
 #include <stdio.h>
 
-int np();
-
 int main (){
     
     int i, num, cont=0;
