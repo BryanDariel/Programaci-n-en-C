@@ -1,0 +1,31 @@
+
+//* Ejercicio 1 While y For. Programa en C que permita generar la tabla de multiplicar de un número entero positivo N, comenzando desde 1.
+
+#include <stdio.h>
+
+int main (void) 
+{
+int n = 0; //* Este es el multiplicando
+int x = 0; //* Este es el multiplicador
+int p = 0 ; //* Este es el producto
+
+printf("\nBienvenido.\nPor favor, introduzca el numero del multplicando: ");
+
+scanf("%d", &n);
+
+printf("\nIntroduzca el numero maximo del multiplicador: ");
+
+scanf("%d", &x);
+
+for (int num1 = 1; num1 <= x;num1++){
+    p = n * num1;
+    printf("\nEl resultado de %d por %d es: %d", n, num1, p);
+}
+
+if (x <= 0){
+    printf("\nIncorrecto. El multiplicador no puede ser menor o igual a cero.");
+}
+
+return 0;
+
+}
