@@ -7,18 +7,19 @@ int main (void)
 int n = 0; //* Este es el multiplicando
 int x = 0; //* Este es el multiplicador
 int p = 0 ; //* Este es el producto
+int i; 
 
 printf("\nBienvenido.\nPor favor, introduzca el numero del multplicando: ");
 
 scanf("%d", &n);
 
-printf("\nIntroduzca el numero maximo del multiplicador: ");
+printf("\nIntroduzca el número máximo del multiplicador: ");
 
 scanf("%d", &x);
 
-for (int num1 = 1; num1 <= x;num1++){
-    p = n * num1;
-    printf("\nEl resultado de %d por %d es: %d", n, num1, p);
+for (i = 1; i <= x; i++){
+    p = n * i;
+    printf("\nEl resultado de %d por %d es: %d", n, i, p);
 }
 
 if (x <= 0){
