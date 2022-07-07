@@ -1,0 +1,46 @@
+/*Programa en C que, al recibir como dato un número entero N, obtenga el resultado de la siguiente serie:
+
+1^1 - 2^2 + 3^3 - . . . + N^N. */
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int n;//* La base y el exponente
+    int i;
+    int potencia;
+    double general1; //* Suma de todos los pares
+    double general2; //* Suma de todos los impares
+    double result; //* Resultado total
+    int neg;
+
+    printf("Bienvenido.\nIntroduzca un numero: ");
+    
+    scanf("\n%d", &n);
+    
+    for(i = 0; i <= n; i++) {
+    
+    //* Va a tomar los numeros pares
+        
+        i = i+1;
+        potencia = pow(n, i);
+        general1 = potencia + i;
+    }
+    
+    for(i = 1; i <= n; i++) { 
+        
+    //* Va a tomar los numeros impares
+    
+    i = i+1;
+    potencia = pow(n, i);
+    neg = i * (-1);
+    general2 = potencia * neg;
+    
+    }
+    
+    result = general1 + general2;
+    
+    printf("\nEl resutado es: %d", result);
+     
+    return 0;
+}
