@@ -1,32 +1,32 @@
-/* Programa en C que, al recibir como dato un número entero N, calcule el resultado de la siguiente serie: 
+/*Programa en C que, al recibir como dato un número entero N, calcule el resultado de la siguiente serie: 
 
-                                1+ 1/2 + 1/3 + 1/4+...+ 1/n */
-
+                            1 / 1/2 * 1/3 / 1/4 *... * ó / 1/n  */
+			
+		
 #include <stdio.h>
 
-float main (void) {
-int n; //* Este es el Dividendo
-int x; //* Este es el Divisor
-float p; //* Este es el Cociente
+float main (void)
+{
+int n;       //* Este es el Dividendo. El Dividendo pide que siempre sea 1.
+double p;   //* Este es el Cociente o  Resultado
+int i;
 
 printf("\nBienvenidos.\nPor favor, introduzca el número del Dividendo: ");
 
 scanf("%d", &n);
 
-printf("\nIntroduzca el número máximo del Divisor: ");
-
-scanf("%d", &x);
-
-for (int num1 = 1; num1 <= x;num1++){
-    p = n / num1;
-    printf("\nEl resultado de %d entre %d es: %4.2f", n, num1, p);
+for (i = 1; i <= n; i++){
     
+    p = 0;
+    p += 1.0 / i;
+    
+    printf("\nEl resultado de la serie es: %.2f", p);
 }
 
-if (x <= 0){
-    printf("\nIncorrecto. El Divisor no puede ser menor o igual a cero.");
+if (n <= 0){
+    
+    printf("\nIncorrecto. El Dividendo no puede ser menor o igual a cero.");
 }
 
 return 0;
-
 }
