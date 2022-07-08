@@ -6,41 +6,26 @@
 #include <math.h>
 
 int main(){
-    int n;//* La base y el exponente
-    int i;
-    int potencia;
-    double general1; //* Suma de todos los pares
-    double general2; //* Suma de todos los impares
-    double result; //* Resultado total
-    int neg;
-
+    
+    int n, i, result = 0;
+    
     printf("Bienvenido.\nIntroduzca un numero: ");
+    scanf("%d", &n);
     
-    scanf("\n%d", &n);
-    
-    for(i = 0; i <= n; i++) {
-    
-    //* Va a tomar los numeros pares
+    for (i = 1; i < n; i++){
         
-        i = i+1;
-        potencia = pow(n, i);
-        general1 = potencia + i;
+        if (i % 2 == 0){    //* Numeros pares
+            
+            result = result - pow(i, i);
+        } 
+        
+        else{
+            
+            result = result + pow(i, i); //* Numeros impares
+        }
     }
     
-    for(i = 1; i <= n; i++) { 
-        
-    //* Va a tomar los numeros impares
-    
-    i = i+1;
-    potencia = pow(n, i);
-    neg = i * (-1);
-    general2 = potencia * neg;
-    
-    }
-    
-    result = general1 + general2;
-    
-    printf("\nEl resutado es: %d", result);
+    printf("\nEl resultado de la serie es: %d", result);
      
     return 0;
 }
