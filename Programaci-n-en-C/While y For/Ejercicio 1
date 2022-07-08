@@ -1,4 +1,4 @@
-//* Programa en C que permita generar la tabla de multiplicar de un número entero positivo N, comenzando desde 1.
+//*Programa en C que permita generar la tabla de multiplicar de un número entero positivo N, comenzando desde 1.
 
 #include <stdio.h>
 
