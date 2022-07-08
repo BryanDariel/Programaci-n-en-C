@@ -14,7 +14,7 @@ int main(){
     
     for(i = 2; i <= n; i++) {
         
-        if (i % 2 == 0){ //* Va a tomar los numeros pa
+        if (i % 2 == 0){ //* Va a tomar los numeros pares
         
         result = result / (1.0 / i);
     }
