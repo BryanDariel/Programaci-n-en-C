@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main()
+{
+    float precioGasolina = 0.0;
+    float paso = 0.0;
+    float promedioCarreta = 0.0;
+    float promedioCiudad = 0.0;
+    float promedio = 0.0;
+    char control = 1;
+    const float litro2galon = 3.78;
+    
+    printf("Calculo Gasolina Europeo L/100Km a Dominicano Km/Galon\n");
+    
+    if (precioGasolina == 0){
+        
+        printf("Por favor, suministrar el precio gasolina x galon: ");
+        scanf("%f", &precioGasolina);
+    }
+    
+    control = 1;
+    while (control){
+        
+        printf("\nPor favor, suministrar el promedio consumo en la ciudad: ");
+        scanf("%f", &promedioCiudad);
+        
+        printf("\nPor favor, suministrar el promedio consumo en la carretera: ");
+        scanf("%f",&promedioCarreta);
+        
+        printf("\nPor favor, suministrar paso del detalle a imprimir: ");
+        scanf("%f", &paso);
+        
+    }
+    
+    if(promedioCiudad < promedioCarreta){
+        
+        printf("\nError. El promedio carretera debe ser mayor que el promedio de la ciudad");
+        
+    }
+    
+    else if(paso < 0.1 || paso > 2){
+        
+        printf("\nError. El valor del paso debe ser 0.1 hasta 2.");
+        
+    }
+    
+    else{
+        
+        control = 0;
+    }
+    
+    for(promedio = promedioCiudad; promedio = promedioCarreta; promedio = promedio - paso){
+        
+        //hacer calculos necesarios
+        //convertir L/Km a Km/Galones
+        
+        float Kmxgalones = 0;
+        float costoKm = precioGasolina / Kmxgalones;
+        
+        Kmxgalones = 100/(promedio / litro2galon);
+        costoKm = precioGasolina / Kmxgalones;
+        
+        printf("\nPromedio L/Km: %f | Km/Galon: %f | CostoKm: %f", promedio, Kmxgalones, costoKm);
+        
+    }
+
+    return 0;
+}
