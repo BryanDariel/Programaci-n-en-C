@@ -1,3 +1,5 @@
+//Conversion de Litros/100km a Dominicano Km/Galon
+
 #include <stdio.h>
 #include <stdlib.h>
 int main() 
@@ -10,20 +12,20 @@ int main()
   char control = 1;
   const float litro2galon = 3.78;
 
-  printf ("calculo Gasolina Europeo L/100km a Dominicano km/Galon\n");
+  printf ("Conversion de Litros/100km a Dominicano Km/Galon\n");
 
   if (precioGasolina == 0.0)
     {
-      printf ("Por favor suministrar precio de la gasolina x galon: ") ;
+      printf ("Por favor, ingrese el precio de la gasolina x galon: ") ;
       scanf ("%f",&precioGasolina); 
     }
  control = 1;
   while (control)
      { 
-       printf ( "\n Por favor suministrar consumo en ciudad: ");
+       printf ( "\nPor favor, ingrese el consumo promedio en la ciudad: ");
       scanf("%f",&promedioCiudad);
 
-       printf ( "\n Por favor suministrar consumo carretera: ");
+       printf ( "\nPor favor, ingrese el consumo promedio en la carretera: ");
        scanf("%f",&promedioCarretera);
 
        printf ( "\n Por favor sumisnistrar paso del detalle a imprimir: ");
@@ -31,11 +33,11 @@ int main()
 
        if (promedioCiudad < promedioCarretera)
          { 
-          printf("\n Error El promedio carretera debe ser mayor al de ciudad:"); 
+          printf("\nError. El promedio carretera debe ser mayor al de ciudad:"); 
 
            }else if (paso < 0.1 || paso > 2)
             { 
-         printf("\n Error El valor del paso es o muy grande o muy pequeño 0.1 − 2");
+         printf("\nError. El valor del paso debe estar entre: 0.1 hasta 2.");
 
        }else 
        {
@@ -51,10 +53,8 @@ int main()
     kmxgal = 100 / (promedio / litro2galon);
     costokm = precioGasolina / kmxgal;
 
-      printf ("\n|promedio L/100km: %f | km/galon: %f | costo km: %f", promedio,kmxgal,costokm );
+      printf ("\n|Promedio Litros por cada 100km: %f | Km por galon: %f | Costo por km: %f", promedio,kmxgal,costokm );
       }
-
-
 
   return 0;
 }
