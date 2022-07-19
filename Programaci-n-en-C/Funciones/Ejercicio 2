@@ -14,8 +14,6 @@ double result = 1 ; //* Resultado
 
 int main(){
     
-    int resultado;
-    
     printf("Bienvenido.\nIntroduzca un numero: ");
     scanf("\n%d", &n);
     
@@ -30,7 +28,7 @@ int main(){
 int encontrarPares (int i){
     
     for(i = 2; i <= n; i++) {
-    
+        
         //* Va a tomar los numeros pares
         if (i % 2 == 0){ 
         
@@ -40,7 +38,6 @@ int encontrarPares (int i){
     //* Va a tomar los numeros impares
     
     else {  
-    
         result = result * (1.0 / i);
     }
     }
