@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 //Funciones
-float Calculos();
+int Calculos();
 
 //Variables y constantes
 float precioGasolina = 0.0 ;
@@ -19,16 +19,16 @@ const float litro2galon = 3.78;
 int ID = 0;
  
 //Funcion principal
-int main() 
+int main(void) 
 {
   int pregunta = 0;
   
   Calculos();
   
-  printf("\n\n¿Quieres hacer otro calculo? Imprima \"0\" para terminar o \"1\" para volver a empezar: "); //Volver a hacer el calculo
+  printf("\n\n¿Quieres hacer otro calculo?\nImprima \"0\" para terminar o \"1\" para volver a empezar: "); //Volver a hacer el calculo
   scanf("%d", &pregunta);
   
-  if (pregunta != 0 && pregunta == 1){
+  if (pregunta != 0 || pregunta == 1){
       
       Calculos();
   }
@@ -36,13 +36,13 @@ int main()
   return 0;
 }
 
-float Calculos() //Aqui se hace las conversiones
+int Calculos(void) //Aqui se hace las conversiones
 {
     printf ("Conversion de Litros/100km a Dominicano Km/Galon\n");
 
   if (precioGasolina == 0.0)
     {
-      printf ("Por favor, ingrese el precio de la gasolina x galon: "); //Esta a 3.78, el galon  
+      printf ("Por favor, ingrese el precio de la gasolina x galon: "); //El galon esta a 3.78 o 293.6 
       scanf ("%f",&precioGasolina); 
     }
  control = 1;
