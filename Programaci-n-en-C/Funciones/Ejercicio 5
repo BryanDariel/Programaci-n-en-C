@@ -1,3 +1,5 @@
+//Nombre: Bryan Dariel Rondon Saldaña
+//Matricula: 2022-0368
 /*Programa en C que, al recibir como dato un número entero N, obtenga el resultado de la siguiente serie:
 
 1^1 - 2^2 + 3^3 - . . . + N^N. */
