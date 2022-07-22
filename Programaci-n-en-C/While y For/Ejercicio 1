@@ -1,9 +1,15 @@
+//Nombre: Bryan Dariel Rondon Saldaña 
+//Matricula: 2022-0368
+
 //*Programa en C que permita generar la tabla de multiplicar de un número entero positivo N, comenzando desde 1.
 
+//Libreria
 #include <stdio.h>
 
 int main (void) 
 {
+
+//Variables
 int n = 0; //* Este es el multiplicando
 int x = 0; //* Este es el multiplicador
 int p = 0 ; //* Este es el producto
@@ -13,13 +19,13 @@ printf("\nBienvenido.\nPor favor, introduzca el numero del multplicando: ");
 
 scanf("%d", &n);
 
-printf("\nIntroduzca el número máximo del multiplicador: ");
+printf("\nIntroduzca el número máximo del multiplicador: "); //Esto hara que multipliquemos N hasta el valor que queramos. Si x15 o hasta x3, por ejemplo
 
 scanf("%d", &x);
 
 for (i = 1; i <= x; i++){
     p = n * i;
-    printf("\nEl resultado de %d por %d es: %d", n, i, p);
+    printf("\nEl resultado de %d por %d es: %d", n, i, n*i);
 }
 
 if (x <= 0){
@@ -27,5 +33,4 @@ if (x <= 0){
 }
 
 return 0;
-
 }
