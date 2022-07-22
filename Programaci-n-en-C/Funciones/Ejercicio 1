@@ -4,10 +4,18 @@
 
 #include <stdio.h>
 
+int promedio();
 
 int main(){
 	
-	int n, i, conteoPares = 0, conteoImpares = 0;
+	promedio();
+	
+	return 0;
+}
+
+int promedio(){
+    
+    int n, i, conteoPares = 0, conteoImpares = 0;
 	
 	printf ("Bienvenido.\nIngrese un número: ");
 	scanf("%d", &n);
@@ -31,6 +39,4 @@ int main(){
 	
 	printf ("\nEl número de pares encontrados es: %d", conteoPares);
 	printf ("\nEl número de impares encontrados es: %d", conteoImpares);
-	
-	return 0;
 }
