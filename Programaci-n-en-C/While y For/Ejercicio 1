@@ -27,11 +27,10 @@ for (i = 1; i <= x; i++){ //For para el aumento del multplicando
     printf("\nEl resultado de %d por %d es: %d", n, i, n*i);
 }
 
-if (x <= 0) //No podemos multplicar (5)x(-1) pero si (-1) x (5)
+if (x <= 0) //El programa no permite que el multiplicador sea menor que 1
 {
     printf("\nIncorrecto. El multiplicador no puede ser menor o igual a cero.");
 }
 
 return 0;
-
 }
