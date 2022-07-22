@@ -1,3 +1,5 @@
+//Nombre: Bryan Dariel Rondon Saldaña
+//Matricula: 2022-0368
 /* Programa en C que, al ingresar un numero calcule su factorial */
 
 #include <stdio.h>
