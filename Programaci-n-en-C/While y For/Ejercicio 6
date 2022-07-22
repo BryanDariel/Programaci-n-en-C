@@ -1,4 +1,7 @@
-/* Programa en C que, al recibir como datos el peso, la altura y el sexo de N personas que pertenecen a un estado de la República Mexicana, obtenga el promedio del peso (edad ≥ 18) y el promedio de la altura (edad ≥ 18), tanto de la población masculina como de la femenina. */
+//Nombre: Bryan Dariel Rondon Saldaña 
+//Matricula: 2022-0368
+/* Programa en C que, al recibir como datos el peso, la altura y el sexo de N personas que pertenecen a un estado de la República Mexicana,
+obtenga el promedio del peso (edad ≥ 18) y el promedio de la altura (edad ≥ 18), tanto de la población masculina como de la femenina. */
 
 #include <stdio.h>
 
@@ -15,10 +18,13 @@ int main () {
     float pesoMujeres = 0, alturaMujeres = 0;
     float promedioPesoF, promedioAlturaF;
     
+    //Cantidad de personas
     printf("Ingrese el numero de personas a evaluar: ");
     scanf("%d", &n);
     
-    for (i = 1; i < n; i++){
+    //Ingresar los datos de cada persona
+    for (i = 1; i < n; i++)
+    {
         printf("\nIngrese su genero (M) (F): ");  //* Introduccion del genero
         scanf(" %c", &genero);
         
@@ -69,7 +75,7 @@ int main () {
         promedioPesoF = 0;
     }
     
-    //* Calculo de los promedios
+    //Calculo de los promedios
     
     printf("\nEl promedio de peso de los hombres es de: %.2f", promedioPesoH);   
     printf("\nEl promedio de peso de las mujeres es de: %.2f", promedioPesoF);
