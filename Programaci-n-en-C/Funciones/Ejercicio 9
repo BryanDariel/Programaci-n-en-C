@@ -1,3 +1,5 @@
+//Nombre: Bryan Dariel Rondon Saldaña
+//Matricula: 2022-0368
 /* Programa en C que, al ingresar un numero de almenos 2 digitos, lo invierta. Ej: "9256" a "6529"*/
 
 #include <stdio.h>
