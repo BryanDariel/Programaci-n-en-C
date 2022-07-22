@@ -1,3 +1,5 @@
+//Nombre: Bryan Dariel Rondon Saldaña 
+//Matricula: 2022-0368
 /* Programa en C que, al recibir como dato un número entero N, calcule el resultado de la siguiente serie: 
 
 			1 / 1/2 * 1/3 / 1/4 *... * ó / 1/n  */
@@ -14,12 +16,14 @@ int main(){
     
     for(i = 2; i <= n; i++) {
         
-        if (i % 2 == 0){ //* Va a tomar los numeros pares
+        if (i % 2 == 0) //Toma los numeros pares
+	{
         
         result = result / (1.0 / i);
     }
     
-    else {  //* Va a tomar los numeros impares
+    else //Toma los numeros impares
+    {
     
         result = result * (1.0 / i);
     }
