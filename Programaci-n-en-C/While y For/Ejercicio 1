@@ -16,21 +16,22 @@ int p = 0 ; //* Este es el producto
 int i; 
 
 printf("\nBienvenido.\nPor favor, introduzca el numero del multplicando: ");
-
 scanf("%d", &n);
 
 printf("\nIntroduzca el número máximo del multiplicador: "); //Esto hara que multipliquemos N hasta el valor que queramos. Si x15 o hasta x3, por ejemplo
 
 scanf("%d", &x);
 
-for (i = 1; i <= x; i++){
+for (i = 1; i <= x; i++){ //For para el aumento del multplicando
     p = n * i;
     printf("\nEl resultado de %d por %d es: %d", n, i, n*i);
 }
 
-if (x <= 0){
+if (x <= 0) //No podemos multplicar (5)x(-1) pero si (-1) x (5)
+{
     printf("\nIncorrecto. El multiplicador no puede ser menor o igual a cero.");
 }
 
 return 0;
+
 }
