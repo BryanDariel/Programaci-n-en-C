@@ -1,10 +1,14 @@
+//Nombre: Bryan Dariel Rondon Saldaña
+//Matricula: 2022-0368
+/* Programa en C que, obtenga e imprima todos los números perfectos comprendidos entre 1 y N.
+
 #include <stdio.h>
 
 int i, n, suma = 0;
 
 int main (){
     
-    printf("Inserte un número: ");
+    printf("Inserte un número para encontrar los numeros perfectos: ");
     scanf("%d", &n);
     
     for (i = 1; i<n; i++){
