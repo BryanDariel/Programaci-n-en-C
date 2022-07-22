@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int i, n, suma = 0;
+
+int main (){
+    
+    printf("Inserte un número: ");
+    scanf("%d", &n);
+    
+    for (i = 1; i<n; i++){
+        
+        if (n % i == 0){
+            
+            suma+=i;
+        }
+    }
+    
+    if (suma == n){
+            
+            printf("\nEl numero es perfecto.");
+        }
+        else{
+            
+            printf("\nEl numero no es perfecto.");
+        }
+
+    return 0;
+}
