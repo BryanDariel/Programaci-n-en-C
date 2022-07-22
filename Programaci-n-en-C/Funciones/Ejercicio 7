@@ -1,3 +1,5 @@
+//Nombre: Bryan Dariel Rondon Saldaña
+//Matricula: 2022-0368
 //* Programa en C que, determine si un numero es primo o no
 
 #include <stdio.h>
