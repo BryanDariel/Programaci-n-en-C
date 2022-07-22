@@ -1,17 +1,22 @@
+//Nombre: Bryan Dariel Rondon Saldaña 
+//Matricula: 2022-0368
 /*Programa en C que, al recibir como datos dos números enteros positivos, obtenga e imprima todos los números primos gemelos comprendidos entre dichos números. 
 Los primos gemelos son una pareja de números primos con una diferencia entre sí de exactamente dos.*/
 
+//Libreria
 #include <stdio.h>
 
+//Funcion principal
 int main(){
     
+    //Variables
     int n1, n2, i;
     int a = 0, b;
     
-    printf("Bienvenido. \nIntroduce el primer numero: ");
+    printf("Bienvenido.\nPara encontrar los numeros primos gemelos, por favor, introduzca el primer numero: ");
     scanf("%d", &n1);
     
-    printf("Introduce el segundo numero: ");
+    printf("Ahora, introduzca el segundo numero: ");
     scanf("%d", &n2);
     
     if (n1 == n2){
@@ -19,7 +24,7 @@ int main(){
     }
     else {
         
-        //* Intercambiar por el mayor
+        // Intercambiar por el mayor
         if (n1 > n2){ //* 7 - 3 
         
             int aux = n1; //* 7
@@ -69,7 +74,6 @@ int main(){
             }
         }
     }
-    
     
     return 0;
 }
