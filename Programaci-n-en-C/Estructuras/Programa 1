@@ -1,4 +1,4 @@
-Programa en C de Declaracion de Estructuras
+//Programa en C de Declaracion de Estructuras
 
 #include <stdio.h>
 #include <string.h>
