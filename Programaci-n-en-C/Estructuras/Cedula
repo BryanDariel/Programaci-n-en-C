@@ -1,7 +1,6 @@
 //Programa para crear una cedula
 
 #include <stdio.h>
-#include <time.h>
 
 struct cedula
 {
