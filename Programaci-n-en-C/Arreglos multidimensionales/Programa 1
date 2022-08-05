@@ -9,7 +9,7 @@ void Lectura(int [][TAM], int);
 void Imprime(int [][TAM], int);
 
 void main (void){
-    
+
     int MAT[TAM][TAM];
     Lectura(MAT, TAM);
     Imprime(MAT, TAM);
