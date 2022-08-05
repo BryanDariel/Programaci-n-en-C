@@ -5,39 +5,48 @@
 
 struct cedula
 {
-    char nombre[20];
+    char nombre[50];
     char matricula[15];
-
-    char nacionalidad[20];
-    char provincia[20];
     
-    char genero[10];
+    char fecha[50];
+
+    char pais[50];
+    char provincia[30];
+    char nacionalidad[20];
+    
+    char genero[50];
     char tipoSangre[10];
-    char estadoCivil[10];
+    char estadoCivil[20];
     
     char ocupacion[20];
     
-    char codigoPostal[5];
+    char codigoPostal[10];
     
-    char calle[20];
-    int casa;
-    char sector[15];
+    char calle[50];
+    char sector[20];
     
-};
+} cedula1;
 
-int main(void)
+void main(void)
 {
     printf("Cedula de Identidad");
-    printf("\nIngrese su nombre: ");
+    printf("\nIngrese su nombre completo: ");
     gets(cedula1.nombre);
     printf("Ingrese la numero de la cedula: ");
     gets(cedula1.matricula);
     
-    printf("Ingrese su nacionalidad: "); 
-    gets(cedula1.nacionalidad);
+    printf("Ingrese su fecha de nacimiento. Utilice el formato \"dd/mm/aaaa\": ");
+    gets(cedula1.fecha);
+    fflush(stdin);
+    
+    printf("Ingrese su pais: ");
+    gets(cedula1.pais);
     fflush(stdin);
     printf("Ingrese su provincia: ");
     gets(cedula1.provincia);
+    printf("Ingrese su nacionalidad: "); 
+    gets(cedula1.nacionalidad);
+    fflush(stdin);
     
     printf("Ingrese su genero: ");
     gets(cedula1.genero);
@@ -60,13 +69,16 @@ int main(void)
     //Impresion de datos
     
     printf("\n\nCEDULA DE IDENTIDAD Y ELECTORAL");
-    printf("\n %s \n %s", cedula1.nombre, cedula1.matricula);
-    printf("\n LUGAR DE NACIMIENTO: \n %s, %s", cedula1.nacionalidad, cedula1.provincia);
+    printf("\n NOMBRE COMPLETO: %s", cedula1.nombre);
+    printf("\n NUMERO DE CEDULA: %s", cedula1.matricula);
+    printf("\n LUGAR DE NACIMIENTO: %s, %s", cedula1.pais, cedula1.provincia);
+    
+    printf("\n NACIONALIDAD: %s", cedula1.nacionalidad);
+    
+    printf("\n FECHA DE NACIMIENTO: %s", cedula1.fecha);
     
     printf("\n SEXO: %s \t SANGRE: %s \t ESTADO CIVIL: %s", cedula1.genero, cedula1.tipoSangre, cedula1.estadoCivil);
     
-    printf("\n\n CODIGO POSTAL \n %s", cedula1.codigoPostal);
-    printf("\n DIRECCION DE RESIDENCIA \n %s \n SECTOR \n %s", cedula1.calle, cedula1.sector);
-    
-    return 0;
+    printf("\n\n CODIGO POSTAL: %s", cedula1.codigoPostal);
+    printf("\n\n DIRECCION DE RESIDENCIA: %s \n SECTOR: %s", cedula1.calle, cedula1.sector);
 }
