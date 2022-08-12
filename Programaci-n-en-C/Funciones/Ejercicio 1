@@ -1,5 +1,7 @@
-//Nombre: Bryan Dariel Rondon Saldaña
-//Matricula: 2022-0368
+/*
+Nombre: Bryan Dariel Rondon Saldaña
+Matricula: 2022-0368
+*/
 /*Programs en C que, obtenga el promedio de pares e impares */
 
 #include <stdio.h>
