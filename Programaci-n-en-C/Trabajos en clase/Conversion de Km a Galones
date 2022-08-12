@@ -1,5 +1,10 @@
-//Un cliente quiere saber cuanto le costaran los galones para un viaje en carretera y en la ciudad
-//Conversion de Litros/100km a Dominicano Km/Galon
+/*
+Nombre: Bryan Dariel Rondon
+Matricula: 2022-0368
+
+Un cliente quiere saber cuanto le costaran los galones para un viaje en carretera y en la ciudad
+
+Conversion de Litros/100km a Dominicano Km/Galon */
 
 //Libreria
 #include <stdio.h>
