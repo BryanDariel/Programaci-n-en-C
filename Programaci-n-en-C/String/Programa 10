@@ -15,7 +15,7 @@ int i = 0;
 float sum = 0.0;
 printf("\nDesea ingresar una cadena de caracteres (S/N)? ");
 c = getchar();
-while (c == 'S')
+while (c == 'S' || c == 's')
 {
 printf("\nIngrese la cadena de caracteres: ");
 fflush(stdin);
