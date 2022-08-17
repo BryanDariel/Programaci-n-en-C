@@ -6,7 +6,7 @@ Matricula: 2022-0368
 El programa, al recibir como datos dos números enteros, determina si el segundo es múltiplo del primero. 
 */
 
-# include <stdio.h>
+#include <stdio.h>
 
 int multiplo(int, int);
 
