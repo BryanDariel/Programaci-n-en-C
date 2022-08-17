@@ -16,7 +16,7 @@ void main(void){
 
 for (I = 1; I <= 10; I++)
 {
-    CUB = cubo(); /* Llamada a la función cubo. */
+    CUB = cubo();
     printf("\nEl cubo de %d es: %d", I, CUB);
     
     }
