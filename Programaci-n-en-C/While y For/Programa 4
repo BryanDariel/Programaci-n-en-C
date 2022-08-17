@@ -10,25 +10,26 @@ cuadrado de los mismos y la suma correspondiente a dichos cuadrados.
 #include <stdio.h>
 #include <math.h>
 
-void main(void)
-{
-int NUM;
-long CUA, SUC = 0;
-
-printf("Calcular los cuadrados de los numeros positivos y sumar los cuadrados entre sí.");
-printf("\nIngrese \"0\" para finalizar.");
-printf("\n\nIngrese un número entero:\t");
-scanf("%d", &NUM);
-
-while (NUM)
-/* La condición es verdadera mientras el entero es diferente de cero. */
-{
-CUA = pow (NUM, 2);
-printf("%d al cubo es %ld", NUM, CUA);
-SUC = SUC + CUA;
-printf("\n\nIngrese un número entero:\t");
-scanf("%d", &NUM);
-}
-
-printf("\nLa suma de los cuadrados es %ld", SUC);
+void main(void){
+    
+    int NUM;
+    long CUA, SUC = 0;
+    
+    printf("Calcular los cuadrados de los numeros positivos y sumar los cuadrados entre sí.");
+    printf("\nIngrese \"0\" para finalizar.");
+    printf("\n\nIngrese un numero entero:\t");
+    scanf("%d", &NUM);
+    
+    while (NUM)
+    /* La condición es verdadera mientras el entero es diferente de cero. */
+    
+    {
+        CUA = pow (NUM, 2);
+        printf("%d al cubo es %ld", NUM, CUA);
+        SUC = SUC + CUA;printf("\n\nIngrese un número entero:\t");
+        scanf("%d", &NUM);
+        
+    }
+    
+    printf("\nLa suma de los cuadrados es %ld", SUC);
 }
