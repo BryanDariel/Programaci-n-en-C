@@ -1,8 +1,9 @@
 /*
 Nombre: Bryan Dariel Rondon Saldaña
 Matricula: 2022-0368
+
+Programa en C de Declaracion de Estructuras
 */
-//Programa en C de Declaracion de Estructuras
 
 #include <stdio.h>
 #include <string.h>
