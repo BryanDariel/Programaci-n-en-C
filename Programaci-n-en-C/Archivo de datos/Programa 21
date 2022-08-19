@@ -1,9 +1,13 @@
-#include <stdio.h>
+/*
+Nombre: Bryan Dariel Rondon Saldaña
+Matricula: 2022-0368
 
-/* Examen de admisión.
 El programa, al recibir como dato un archivo de acceso directo que contiene información sobre los alumnos
 que presentaron el examen de admisión a una universidad, genera información importante para el Departamento de Control Escolar.
 */
+
+#include <stdio.h>
+
 
 typedef struct{
 
