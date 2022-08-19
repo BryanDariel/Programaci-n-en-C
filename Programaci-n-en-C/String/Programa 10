@@ -2,8 +2,7 @@
 Nombre: Bryan Dariel Rondon
 Matricula: 2022-0368
 
-El programa, al recibir como datos varias cadenas de caracteres que
-contienen reales, los suma y obtiene el promedio de los mismos. */
+El programa, al recibir como datos varias cadenas de caracteres que contienen reales, los suma y obtiene el promedio de los mismos. */
 
 #include <stdio.h>
 #include <stdlib.h>
