@@ -5,8 +5,8 @@ Matricula: 2022-0368
 Funciones para el manejo de caracteres de la biblioteca ctype.h. 
 */
 
-# include <stdio.h>
-# include <ctype.h>
+#include <stdio.h>
+#include <ctype.h>
 
 void main(void){
     
