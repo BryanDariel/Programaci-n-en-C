@@ -73,7 +73,7 @@ void F2(FILE *ap, FILE *c1, FILE *c2, FILE *c3, FILE *c4, FILE *c5){
     rewind(ap);
     fread(&alu, sizeof(alumno), 1, ap);
     while (!feof(ap)){
-        if(((alu.examen >= 1300) && (alu.promedio >= 8))((alu.examen >=1400) && (alu.promedio >= 7))){
+        if(((alu.examen >= 1300) && (alu.promedio >= 8)) || ((alu.examen >=1400) && (alu.promedio >= 7))){
             switch (alu.carrera){
                 case 1: fwrite(&alu, sizeof(alumno), 1, c1);
                 break;
