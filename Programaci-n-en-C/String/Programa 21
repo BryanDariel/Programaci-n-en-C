@@ -9,8 +9,6 @@ intercambie las filas del arreglo: la última con la primera, la penúltima con 
 #include <stdio.h>
 #include <string.h>
 
-
-
 int longitud(char cad);
 
 void main(void){
@@ -42,7 +40,6 @@ void main(void){
             p = i;
             
         }
-        
     }
     
     printf("\nLa cadena con mayor longitud es: ");
